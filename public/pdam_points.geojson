@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PDAM Tirto Moedal - Kantor Pusat",
+        "address": "Jl. Veteran, Semarang",
+        "type": "kantor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.4215, -6.9735]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PDAM Tirto Moedal - Depo Air 1",
+        "address": "Jl. Pemuda, Semarang",
+        "type": "depo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.4330, -6.9660]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PDAM Tirto Moedal - Instalasi 2",
+        "address": "Kecamatan Semarang Tengah",
+        "type": "instalasi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.4180, -6.9570]
+      }
+    }
+  ]
+}

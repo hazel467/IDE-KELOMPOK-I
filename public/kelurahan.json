@@ -1,0 +1,267 @@
+{
+  "source": "Wikipedia",
+  "count": 177,
+  "data": [
+    {
+      "kecamatan": "Banyumanik",
+      "kelurahan": [
+        "Banyumanik",
+        "Gedawang",
+        "Jabungan",
+        "Ngesrep",
+        "Padangsari",
+        "Pedalangan",
+        "Pudakpayung",
+        "Srondol Kulon",
+        "Srondol Wetan",
+        "Sumurboto",
+        "Tinjomoyo"
+      ]
+    },
+    {
+      "kecamatan": "Candisari",
+      "kelurahan": [
+        "Candi",
+        "Jatingaleh",
+        "Jomblang",
+        "Kaliwiru",
+        "Karanganyar Gunung",
+        "Tegalsari",
+        "Wonotingal"
+      ]
+    },
+    {
+      "kecamatan": "Gajahmungkur",
+      "kelurahan": [
+        "Bendanduwur",
+        "Bendan Ngisor",
+        "Bendungan",
+        "Gajahmungkur",
+        "Karangrejo",
+        "Lempongsari",
+        "Petompon",
+        "Sampangan"
+      ]
+    },
+    {
+      "kecamatan": "Gayamsari",
+      "kelurahan": [
+        "Gayamsari",
+        "Kaligawe",
+        "Pandean Lamper",
+        "Sambirejo",
+        "Sawahbesar",
+        "Siwalan",
+        "Tambakrejo"
+      ]
+    },
+    {
+      "kecamatan": "Genuk",
+      "kelurahan": [
+        "Bangetayu Kulon",
+        "Bangetayu Wetan",
+        "Banjardowo",
+        "Gebangsari",
+        "Genuksari",
+        "Karangroto",
+        "Kudu",
+        "Muktiharjo Lor",
+        "Penggaron Lor",
+        "Sembungharjo",
+        "Terboyo Kulon",
+        "Terboyo Wetan",
+        "Trimulyo"
+      ]
+    },
+    {
+      "kecamatan": "Gunungpati",
+      "kelurahan": [
+        "Cepoko",
+        "Gunungpati",
+        "Jatirejo",
+        "Kalisegoro",
+        "Kandri",
+        "Mangunsari",
+        "Ngijo",
+        "Nongkosawit",
+        "Pakintelan",
+        "Patemon",
+        "Plalangan",
+        "Pongangan",
+        "Sadeng",
+        "Sekaran",
+        "Sukorejo",
+        "Sumurejo"
+      ]
+    },
+    {
+      "kecamatan": "Mijen",
+      "kelurahan": [
+        "Bubakan",
+        "Cangkiran",
+        "Jatibarang",
+        "Jatisari",
+        "Karangmalang",
+        "Kedungpane",
+        "Mijen",
+        "Ngadirgo",
+        "Pesantren",
+        "Polaman",
+        "Purwosari",
+        "Tambangan",
+        "Wonolopo",
+        "Wonoplumbon"
+      ]
+    },
+    {
+      "kecamatan": "Ngaliyan",
+      "kelurahan": [
+        "Bambankerep",
+        "Bringin",
+        "Gondoriyo",
+        "Kalipancur",
+        "Ngaliyan",
+        "Podorejo",
+        "Purwoyoso",
+        "Tambakaji",
+        "Wonosari",
+        "Wates"
+      ]
+    },
+    {
+      "kecamatan": "Pedurungan",
+      "kelurahan": [
+        "Gemah",
+        "Kalicari",
+        "Muktiharjo Kidul",
+        "Palebon",
+        "Pedurungan Kidul",
+        "Pedurungan Lor",
+        "Pedurungan Tengah",
+        "Penggaron Kidul",
+        "Plamongan Sari",
+        "Tlogomulyo",
+        "Tlogosari Kulon",
+        "Tlogosari Wetan"
+      ]
+    },
+    {
+      "kecamatan": "Semarang Barat",
+      "kelurahan": [
+        "Bojongsalaman",
+        "Bongsari",
+        "Cabean",
+        "Gisikdrono",
+        "Kalibanteng Kidul",
+        "Kalibanteng Kulon",
+        "Karangayu",
+        "Kembangarum",
+        "Krapyak",
+        "Krobokan",
+        "Manyaran",
+        "Ngemplak Simongan",
+        "Salaman Mloyo",
+        "Tambakharjo",
+        "Tawang Mas",
+        "Tawangsari"
+      ]
+    },
+    {
+      "kecamatan": "Semarang Selatan",
+      "kelurahan": [
+        "Barusari",
+        "Bulustalan",
+        "Lamper Kidul",
+        "Lamper Lor",
+        "Lamper Tengah",
+        "Mugassari",
+        "Peterongan",
+        "Pleburan",
+        "Randusari",
+        "Wonodri"
+      ]
+    },
+    {
+      "kecamatan": "Semarang Tengah",
+      "kelurahan": [
+        "Bangunharjo",
+        "Brumbungan",
+        "Gabahan",
+        "Jagalan",
+        "Karangkidul",
+        "Kauman",
+        "Kembangsari",
+        "Kranggan",
+        "Miroto",
+        "Pandansari",
+        "Pekunden",
+        "Pendrikan Kidul",
+        "Pendrikan Lor",
+        "Purwodinatan",
+        "Sekayu"
+      ]
+    },
+    {
+      "kecamatan": "Semarang Timur",
+      "kelurahan": [
+        "Bugangan",
+        "Karangtempel",
+        "Karangturi",
+        "Kebonagung",
+        "Kemijen",
+        "Mlatibaru",
+        "Mlatiharjo",
+        "Rejomulyo",
+        "Rejosari",
+        "Sarirejo"
+      ]
+    },
+    {
+      "kecamatan": "Semarang Utara",
+      "kelurahan": [
+        "Bandarharjo",
+        "Bulu Lor",
+        "Dadapsari",
+        "Kuningan",
+        "Panggung Kidul",
+        "Panggung Lor",
+        "Plombokan",
+        "Purwosari",
+        "Tanjung Mas"
+      ]
+    },
+    {
+      "kecamatan": "Tembalang",
+      "kelurahan": [
+        "Bulusan",
+        "Jangli",
+        "Kedungmundu",
+        "Kramas",
+        "Mangunharjo",
+        "Meteseh",
+        "Rowosari",
+        "Sambiroto",
+        "Sendangguwo",
+        "Sendangmulyo",
+        "Tandang",
+        "Tembalang"
+      ]
+    },
+    {
+      "kecamatan": "Tugu",
+      "kelurahan": [
+        "Jerakah",
+        "Karanganyar",
+        "Mangkang Kulon",
+        "Mangkang Wetan",
+        "Mangunharjo",
+        "Randu Garut",
+        "Tugurejo"
+      ]
+    },
+    {
+      "kecamatan": "",
+      "kelurahan": []
+    }
+  ]
+}

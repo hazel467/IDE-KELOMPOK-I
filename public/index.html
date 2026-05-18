@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDAM Semarang Dashboard</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="brand-icon">💧</div>
+      <div>
+        <h1>PDAM Semarang</h1>
+        <p>Monitoring distribusi air, laporan masyarakat, dan prioritas area.</p>
+      </div>
+    </div>
+    <nav>
+      <a href="#summary">Dashboard</a>
+      <a href="#mapPanel">Peta</a>
+      <a href="#areasPanel">Area</a>
+      <a href="#reportFormPanel">Lapor</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="summary-grid" id="summary">
+      <article class="card summary-card">
+        <span class="card-title">Total Area</span>
+        <strong id="areaCount">-</strong>
+      </article>
+      <article class="card summary-card">
+        <span class="card-title">Area Prioritas</span>
+        <strong id="highPriorityCount">-</strong>
+      </article>
+      <article class="card summary-card">
+        <span class="card-title">Laporan Baru</span>
+        <strong id="recentReports">-</strong>
+      </article>
+    </section>
+
+    <section class="panel" id="mapPanel">
+      <div class="section-header">
+        <h2>Peta Area PDAM</h2>
+        <p>Visualisasi area layanan dan prioritas distribusi air.</p>
+      </div>
+      <div id="map"></div>
+    </section>
+
+    <section class="panel grid-panel" id="areasPanel">
+      <div class="panel-column">
+        <div class="section-header">
+          <h2>Daftar Area</h2>
+          <p>Skor prioritas dan kondisi distribusi setiap zona.</p>
+        </div>
+        <div id="areaList"></div>
+      </div>
+      <div class="panel-column">
+        <div class="section-header">
+          <h2>Laporan Terbaru</h2>
+          <p>Masalah air yang dilaporkan oleh masyarakat.</p>
+        </div>
+        <div id="reportList"></div>
+      </div>
+    </section>
+
+    <section class="panel" id="reportFormPanel">
+      <div class="section-header">
+        <h2>Lapor Kondisi Air</h2>
+        <p>Kirim laporan cepat untuk masalah distribusi air di area Anda.</p>
+      </div>
+      <form id="reportForm" class="report-form">
+        <label>
+          Pilih Area
+          <select id="areaSelect"></select>
+        </label>
+        <label>
+          Pilih Kelurahan
+          <select id="kelurahanSelect" required>
+            <option value="">Pilih kelurahan</option>
+          </select>
+        </label>
+        <label>
+          Jenis Laporan
+          <select id="reportType" required>
+            <option value="mati air">Mati air</option>
+            <option value="air keruh">Air keruh</option>
+            <option value="tekanan rendah">Tekanan rendah</option>
+            <option value="kebocoran">Kebocoran</option>
+          </select>
+        </label>
+        <label>
+          Deskripsi
+          <textarea id="reportDescription" rows="4" placeholder="Tambahkan detail masalah..."></textarea>
+        </label>
+        <button type="submit">Kirim Laporan</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
