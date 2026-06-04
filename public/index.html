@@ -45,7 +45,30 @@
         <h2>Peta Area PDAM</h2>
         <p>Visualisasi area layanan dan prioritas distribusi air.</p>
       </div>
-      <div id="map"></div>
+      <div id="map">
+        <div class="map-legend-wrapper">
+          <div class="map-legend legend-box">
+            <div class="legend-item"><span class="legend-icon">🗻</span> Kontur Elevasi</div>
+          </div>
+          <div class="map-legend legend-box legend-options-box" id="legendOptions">
+            <div class="legend-options-title">Opsi Peta</div>
+            <button type="button" data-layer="osm" class="legend-menu-item active">Peta Jalan</button>
+            <button type="button" data-layer="topo" class="legend-menu-item">Peta Topografi</button>
+          </div>
+        </div>
+        <div class="map-bottom-legend">
+          <div class="legend-item"><span class="legend-icon">💧</span> PDAM Resmi</div>
+          <div class="legend-item"><span class="legend-icon">💦</span> Reservoir Air</div>
+          <div class="compass">
+            <div class="compass-rose">
+              <div class="compass-n">N</div>
+              <div class="compass-east">E</div>
+              <div class="compass-south">S</div>
+              <div class="compass-west">W</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="panel grid-panel" id="areasPanel">
@@ -72,28 +95,31 @@
       </div>
       <form id="reportForm" class="report-form">
         <label>
-          Pilih Area
-          <select id="areaSelect"></select>
-        </label>
-        <label>
           Pilih Kelurahan
           <select id="kelurahanSelect" required>
             <option value="">Pilih kelurahan</option>
           </select>
         </label>
         <label>
-          Jenis Laporan
+          Alamat Rumah
+          <input id="homeAddress" type="text" placeholder="Contoh: Jl. Pemuda No. 10" required />
+        </label>
+        <label>
+          Jenis Keluhan
           <select id="reportType" required>
             <option value="mati air">Mati air</option>
             <option value="air keruh">Air keruh</option>
             <option value="tekanan rendah">Tekanan rendah</option>
             <option value="kebocoran">Kebocoran</option>
+            <option value="lainnya">Lainnya</option>
           </select>
         </label>
-        <label>
-          Deskripsi
-          <textarea id="reportDescription" rows="4" placeholder="Tambahkan detail masalah..."></textarea>
-        </label>
+        <div id="otherDescriptionContainer" style="display:none;">
+          <label>
+            Jelaskan masalah lain
+            <textarea id="otherDescription" rows="4" placeholder="Jelaskan masalah lainnya..."></textarea>
+          </label>
+        </div>
         <button type="submit">Kirim Laporan</button>
       </form>
     </section>

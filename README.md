@@ -40,7 +40,7 @@ npm install
 npm start
 ```
 
-6. Buka `http://localhost:3000`
+6. Buka `http://localhost:3001` (untuk jalankan langsung tanpa Docker)
 
 ## Deployment dengan Docker
 

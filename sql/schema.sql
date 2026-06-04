@@ -15,6 +15,7 @@ CREATE TABLE IF NOT EXISTS reports (
     id SERIAL PRIMARY KEY,
     area_id INTEGER REFERENCES areas(id) ON DELETE CASCADE,
     kelurahan TEXT,
+    home_address TEXT,
     report_type TEXT NOT NULL,
     description TEXT,
     status TEXT NOT NULL DEFAULT 'baru',

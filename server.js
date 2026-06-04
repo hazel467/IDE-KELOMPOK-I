@@ -1,19 +1,18 @@
-const express = require('express');
+ const express = require('express');
 const cors = require('cors');
 const axios = require('axios');
 const { Pool } = require('pg');
 const dotenv = require('dotenv');
+const fs = require('fs').promises;
+const path = require('path');
 
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 const prometheusUrl = process.env.PROMETHEUS_URL || 'http://localhost:9090';
 
 const pool = new Pool({ connectionString: process.env.DATABASE_URL });
-
-const fs = require('fs').promises;
-const path = require('path');
 
 app.use(cors());
 app.use(express.json());
@@ -113,7 +112,7 @@ app.get('/api/areas', async (req, res) => {
 app.get('/api/reports', async (req, res) => {
   try {
     const result = await pool.query(
-      `SELECT id, area_id, kelurahan, report_type, description, status, created_at FROM reports ORDER BY created_at DESC LIMIT 100`
+      `SELECT id, area_id, kelurahan, home_address, report_type, description, status, created_at FROM reports ORDER BY created_at DESC LIMIT 100`
     );
     res.json({ status: 'ok', data: result.rows });
   } catch (error) {
@@ -123,16 +122,16 @@ app.get('/api/reports', async (req, res) => {
 });
 
 app.post('/api/reports', async (req, res) => {
-  const { area_id, kelurahan, report_type, description } = req.body;
-  if (!report_type || (!area_id && !kelurahan)) {
-    return res.status(400).json({ status: 'error', message: 'report_type dan kelurahan atau area_id wajib diisi' });
+  const { kelurahan, home_address, report_type, description } = req.body;
+  if (!report_type || !kelurahan || !home_address) {
+    return res.status(400).json({ status: 'error', message: 'report_type, kelurahan, dan home_address wajib diisi' });
   }
 
   try {
     await pool.query(
-      `INSERT INTO reports (area_id, kelurahan, report_type, description, status, created_at)
-       VALUES ($1, $2, $3, $4, 'baru', NOW())`,
-      [area_id || null, kelurahan || null, report_type, description || '']
+      `INSERT INTO reports (area_id, kelurahan, home_address, report_type, description, status, created_at)
+       VALUES ($1, $2, $3, $4, $5, 'baru', NOW())`,
+      [null, kelurahan, home_address, report_type, description || '']
     );
     res.json({ status: 'ok', message: 'Laporan berhasil dikirim' });
   } catch (error) {
@@ -149,6 +148,45 @@ app.get('/api/kelurahan', async (req, res) => {
   } catch (error) {
     console.error('API /api/kelurahan error:', error);
     res.status(500).json({ status: 'error', message: 'Gagal mengambil daftar kelurahan' });
+  }
+});
+
+app.get('/api/pdam-reservoir', async (req, res) => {
+  try {
+    const content = await fs.readFile(path.join(__dirname, 'pdam_semarang_reservoir.json'), 'utf8');
+    const data = JSON.parse(content);
+    const features = [];
+
+    const pushPoint = (item, type) => {
+      if (!item.coordinates || item.coordinates.latitude == null || item.coordinates.longitude == null) return;
+      features.push({
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [item.coordinates.longitude, item.coordinates.latitude]
+        },
+        properties: {
+          id: item.id,
+          name: item.name,
+          type,
+          address: item.address,
+          district: item.district,
+          ...(item.services ? { services: item.services } : {}),
+          ...(item.capacity_m3 ? { capacity: item.capacity_m3 } : {}),
+          ...(item.status ? { status: item.status } : {}),
+          ...(item.description ? { description: item.description } : {}),
+          ...(item.alternative_names ? { alternative_names: item.alternative_names } : {})
+        }
+      });
+    };
+
+    (data.pdam_offices || []).forEach((office) => pushPoint(office, office.type || 'kantor'));
+    (data.reservoirs || []).forEach((reservoir) => pushPoint(reservoir, 'reservoir'));
+
+    res.json({ status: 'ok', data: { type: 'FeatureCollection', features } });
+  } catch (error) {
+    console.error('API /api/pdam-reservoir error:', error);
+    res.status(500).json({ status: 'error', message: 'Gagal membaca data PDAM/reservoir' });
   }
 });
 

@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+
+import sys
+import pandas as pd
+
+
+def load_excel(path):
+    try:
+        df = pd.read_excel(path)
+        return df
+    except Exception as error:
+        print(f"Error loading Excel file: {error}", file=sys.stderr)
+        sys.exit(1)
+
+
+def main():
+    if len(sys.argv) < 2:
+        print("Usage: python3 \"pemerintah kota semarang\" <excel-file>", file=sys.stderr)
+        sys.exit(1)
+
+    excel_path = sys.argv[1]
+    df = load_excel(excel_path)
+    print(df.to_json(orient="records", force_ascii=False, date_format="iso"))
+
+
+if __name__ == "__main__":
+    main()

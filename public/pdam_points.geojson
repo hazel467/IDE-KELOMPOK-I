@@ -5,8 +5,10 @@
       "type": "Feature",
       "properties": {
         "name": "PDAM Tirto Moedal - Kantor Pusat",
-        "address": "Jl. Veteran, Semarang",
-        "type": "kantor"
+        "address": "Jl. Veteran 121, Semarang Tengah",
+        "type": "kantor",
+        "phone": "(024) 8313334",
+        "description": "Kantor pusat PDAM Tirto Moedal Semarang"
       },
       "geometry": {
         "type": "Point",
@@ -16,9 +18,25 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "PDAM Tirto Moedal - Depo Air 1",
-        "address": "Jl. Pemuda, Semarang",
-        "type": "depo"
+        "name": "PDAM Tirto Moedal - Kantor Cabang Tembalang",
+        "address": "Jl. Kedungmundu, Tembalang, Semarang",
+        "type": "kantor",
+        "phone": "(024) 7463789",
+        "description": "Kantor cabang PDAM untuk wilayah Tembalang dan sekitarnya"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.4290, -7.0050]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PDAM Tirto Moedal - Depo Air Pemuda",
+        "address": "Jl. Pemuda, Semarang Utara",
+        "type": "depo",
+        "capacity": "5000 m³",
+        "description": "Depo penyimpanan air PDAM bagian utara"
       },
       "geometry": {
         "type": "Point",
@@ -28,13 +46,265 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "PDAM Tirto Moedal - Instalasi 2",
+        "name": "PDAM Tirto Moedal - Depo Air Tembalang",
+        "address": "Jl. Gajahmada, Tembalang",
+        "type": "depo",
+        "capacity": "3000 m³",
+        "description": "Depo penyimpanan air untuk wilayah Tembalang"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.4260, -7.0150]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PDAM Tirto Moedal - Instalasi Semarang Tengah",
         "address": "Kecamatan Semarang Tengah",
-        "type": "instalasi"
+        "type": "instalasi",
+        "description": "Instalasi pompa dan pengolahan air wilayah Semarang Tengah"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [110.4180, -6.9570]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PDAM Tirto Moedal - Instalasi Tembalang",
+        "address": "Jl. Siliwangi, Tembalang",
+        "type": "instalasi",
+        "description": "Instalasi pompa dan pengolahan air wilayah Tembalang"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.4200, -7.0100]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pelayanan Pelanggan PDAM - Semarang Tengah",
+        "address": "Jl. Veteran 121, Semarang",
+        "type": "pelayanan",
+        "jam_buka": "08:00 - 16:00",
+        "description": "Kantor pelayanan pelanggan untuk pembayaran, keluhan, dan sambungan baru"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.4215, -6.9735]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pelayanan Pelanggan PDAM - Tembalang",
+        "address": "Jl. Kedungmundu, Tembalang",
+        "type": "pelayanan",
+        "jam_buka": "09:00 - 15:00",
+        "description": "Kantor pelayanan pelanggan cabang Tembalang"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.4290, -7.0050]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PDAM Tirto Moedal - Kantor Cabang Banyumanik",
+        "address": "Jl. Banyumanik Raya, Banyumanik",
+        "type": "kantor",
+        "phone": "(024) 7640123",
+        "description": "Kantor cabang PDAM untuk wilayah Banyumanik"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.4050, -7.0050]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PDAM Tirto Moedal - Kantor Cabang Semarang Barat",
+        "address": "Jl. Kaligawe, Semarang Barat",
+        "type": "kantor",
+        "phone": "(024) 7640456",
+        "description": "Kantor cabang PDAM untuk wilayah Semarang Barat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.3860, -6.9850]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PDAM Tirto Moedal - Kantor Cabang Semarang Utara",
+        "address": "Jl. Yos Sudarso, Semarang Utara",
+        "type": "kantor",
+        "phone": "(024) 7640789",
+        "description": "Kantor cabang PDAM untuk wilayah Semarang Utara"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.4300, -6.9400]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PDAM Tirto Moedal - Bengkel Perbaikan Utama",
+        "address": "Jl. Kaligawe, Semarang Barat",
+        "type": "bengkel",
+        "dinas": "Perbaikan pipa dan meter",
+        "description": "Bengkel perbaikan utama untuk pipa, meter, dan peralatan PDAM"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.3890, -6.9750]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PDAM Tirto Moedal - Bengkel Tembalang",
+        "address": "Jl. Somplak, Tembalang",
+        "type": "bengkel",
+        "dinas": "Perbaikan lokal",
+        "description": "Bengkel perbaikan lokal untuk wilayah Tembalang"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.4320, -7.0180]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pintu Air Babon - Semarang Barat",
+        "address": "Sungai Babon, Semarang Barat",
+        "type": "intake",
+        "sumber": "Sungai Babon",
+        "description": "Intake air dari Sungai Babon untuk sistem distribusi PDAM"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.3650, -6.9800]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pintu Air Kali Tuntang - Semarang Utara",
+        "address": "Kali Tuntang, Semarang Utara",
+        "type": "intake",
+        "sumber": "Kali Tuntang",
+        "description": "Intake air dari Kali Tuntang untuk sistem distribusi PDAM"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.4500, -6.9500]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Water Meter Pusat - Tembalang",
+        "address": "Jl. Siliwangi, Tembalang",
+        "type": "meter",
+        "fungsi": "Pengukuran debit air distribusi",
+        "description": "Meter pusat untuk pengukuran debit distribusi air ke wilayah Tembalang"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.4180, -7.0120]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gedung Pengelolaan Distribusi - Semarang Tengah",
+        "address": "Jl. Veteran, Semarang Tengah",
+        "type": "kontrol",
+        "fungsi": "Pusat kendali distribusi dan monitoring tekanan",
+        "description": "Pusat kontrol sistem distribusi air PDAM Semarang"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.4215, -6.9700]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Check Point Tekanan - Banyumanik",
+        "address": "Jl. Diponegoro, Banyumanik, Tembalang",
+        "type": "sensor",
+        "parameter": "Tekanan, debit, kekeruhan",
+        "description": "Titik pemantauan tekanan dan kualitas air wilayah Banyumanik"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.4100, -7.0250]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Check Point Tekanan - Rowosari",
+        "address": "Jl. Mayjen Sungkono, Rowosari, Tembalang",
+        "type": "sensor",
+        "parameter": "Tekanan, debit, kekeruhan",
+        "description": "Titik pemantauan tekanan dan kualitas air wilayah Rowosari"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.4450, -7.0080]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Reservoir PDAM Tirto Moedal - Embung Kedungmundu",
+        "address": "Jl. Kedungmundu, Semarang",
+        "type": "reservoir",
+        "capacity": "8000 m³",
+        "description": "Reservoir air utama untuk pasokan wilayah Tembalang dan Semarang Utara"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.4305, -7.0020]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Reservoir PDAM Tirto Moedal - Embung Pemuda",
+        "address": "Jl. Pemuda, Semarang",
+        "type": "reservoir",
+        "capacity": "6500 m³",
+        "description": "Reservoir air untuk membantu distribusi ke Semarang Tengah dan Semarang Utara"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.4320, -6.9640]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Reservoir PDAM Tirto Moedal - Tangki Air Banjarsari",
+        "address": "Jl. Sisingamangaraja, Semarang Selatan",
+        "type": "reservoir",
+        "capacity": "7200 m³",
+        "description": "Reservoir air untuk pasokan Semarang Selatan dan Semarang Timur"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.4335, -7.0200]
       }
     }
   ]

@@ -1,0 +1,133 @@
+{
+  "metadata": {
+    "title": "PDAM dan Reservoir Air di Kota Semarang",
+    "organization": "Perumda Air Minum Tirta Moedal Kota Semarang",
+    "description": "Data lokasi kantor PDAM dan reservoir air di Semarang",
+    "created_date": "2026-06-01",
+    "source_note": "Data alamat dari sumber resmi PDAM. Koordinat perlu diverifikasi via Google Maps/OpenStreetMap untuk akurasi tinggi.",
+    "contact": {
+      "call_center": "0800-1503-888",
+      "wa": "08112680060"
+    }
+  },
+  "pdam_offices": [
+    {
+      "id": "PDAM001",
+      "type": "Kantor Pusat",
+      "name": "Kantor Pusat Tirta Moedal",
+      "address": "Jl. Kelud Raya No. 60, Semarang",
+      "district": "Semarang Tengah",
+      "coordinates": {
+        "latitude": -6.9715,
+        "longitude": 110.4197,
+        "precision": "approximate"
+      },
+      "services": ["pembayaran", "informasi", "pengaduan", "pendaftaran_pelanggan_baru"]
+    },
+    {
+      "id": "PDAM002",
+      "type": "Kantor Cabang Selatan",
+      "name": "Kantor Cabang Selatan",
+      "address": "Jl. Teuku Umar No. 56, Semarang",
+      "district": "Semarang Selatan",
+      "coordinates": {
+        "latitude": -7.0051,
+        "longitude": 110.4236,
+        "precision": "approximate"
+      },
+      "services": ["pembayaran", "informasi", "pengaduan"]
+    },
+    {
+      "id": "PDAM003",
+      "type": "Kantor Cabang Timur",
+      "name": "Kantor Cabang Timur",
+      "address": "Jl. Parang Kesit, Tlogosari, Semarang",
+      "district": "Semarang Utara",
+      "coordinates": {
+        "latitude": -6.9652,
+        "longitude": 110.4489,
+        "precision": "approximate"
+      },
+      "services": ["pembayaran", "informasi", "pengaduan"]
+    },
+    {
+      "id": "PDAM004",
+      "type": "Kantor Cabang Utara",
+      "name": "Kantor Cabang Utara",
+      "address": "Jl. Dr. Cipto No. 103, Semarang",
+      "district": "Semarang Tengah",
+      "coordinates": {
+        "latitude": -6.9589,
+        "longitude": 110.4156,
+        "precision": "approximate"
+      },
+      "services": ["pembayaran", "informasi", "pengaduan"]
+    },
+    {
+      "id": "PDAM005",
+      "type": "Kantor Cabang Barat",
+      "name": "Kantor Cabang Barat",
+      "address": "Jl. W.R. Supratman No. 25, Semarang",
+      "district": "Semarang Barat",
+      "coordinates": {
+        "latitude": -6.9825,
+        "longitude": 110.4012,
+        "precision": "approximate"
+      },
+      "services": ["pembayaran", "informasi", "pengaduan"]
+    }
+  ],
+  "reservoirs": [
+    {
+      "id": "RES001",
+      "name": "Reservoir Siranda",
+      "alternative_names": ["Reservoir Diponegoro", "Siranda Reservoir"],
+      "address": "Jl. Diponegoro, Semarang (dekat Simpang Lima)",
+      "district": "Semarang Tengah",
+      "coordinates": {
+        "latitude": -6.9825,
+        "longitude": 110.4189,
+        "precision": "approximate"
+      },
+      "capacity_m3": 3750,
+      "status": "Aktif (cadangan/backup)",
+      "type": "underground_tank",
+      "description": "Bangunan penampungan air peninggalan Belanda bergaya Art Nouveau. Saat ini berfungsi sebagai cadangan/backup sistem distribusi.",
+      "historical_period": "Zaman Belanda",
+      "architectural_style": "Art Nouveau",
+      "areas_served": ["Simpang Lima", "Gajahmada", "Depok", "Kauman", "Jurnatan"],
+      "notes": "Tidak aktif untuk distribusi sehari-hari, hanya untuk backup saat kejadian luar biasa"
+    }
+  ],
+  "water_sources": [
+    {
+      "id": "SOURCE001",
+      "name": "Sumber Air Cl (Candi)",
+      "type": "mata_air",
+      "location": "Kawasan Candi, Semarang",
+      "description": "Sumber air asli yang dialirkan ke Reservoir Siranda sejak zaman Belanda"
+    }
+  ],
+  "additional_resources": {
+    "website": "https://www.tirtamoedal.co.id",
+    "instagram": "@pdamkotasemarang",
+    "gis_app": {
+      "name": "GIS Tirta Moedal",
+      "platform": "Android (Google Play)",
+      "package_id": "com.pdamsmg.twagis3",
+      "description": "Sistem Informasi Geografis PDAM untuk data perpipaan dan pelanggan internal"
+    },
+    "nawasis": "https://www.nawasis.org/portal/database/airminum/provinsi/33"
+  },
+  "verification_instructions": {
+    "how_to_verify_coordinates": [
+      "Buka Google Maps (maps.google.com)",
+      "Cari alamat lengkap kantor/reservoir",
+      "Klik kanan pada lokasi -> pilih koordinat",
+      "Update field coordinates.latitude dan coordinates.longitude",
+      "Ubah precision menjadi 'verified' setelah konfirmasi"
+    ],
+    "recommended_openstreetmap_query": "https://www.openstreetmap.org/search?query=Reservoir%20Siranda%20Semarang",
+    "google_maps_search": "https://www.google.com/maps/search/PDAM+Tirta+Moedal+Semarang"
+  }
+}

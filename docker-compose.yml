@@ -1,6 +1,6 @@
 services:
   db:
-    image: postgres:15
+    image: postgis/postgis:15-3.4
     container_name: pdam_db
     restart: unless-stopped
     environment:
@@ -34,7 +34,9 @@ services:
       PORT: 3000
     ports:
       - 3000:3000
-    # volume bind removed so container uses built image (preserve installed node_modules)
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
 
   metrics_exporter:
     build: .
@@ -45,7 +47,7 @@ services:
     environment:
       METRICS_PORT: 9100
     depends_on:
-      - db
+      - db  
 
 volumes:
   pdam_db_data:
